@@ -5,17 +5,17 @@
 //
 
 
-#import "ASAPNetworkKitPendingConnectionContainer.h"
+#import "ASMKNetworkKitPendingConnectionContainer.h"
 #import "MKNetworkKit.h"
 #import "ASNetworkRequest.h"
 
 
-@implementation ASAPNetworkKitPendingConnectionContainer
+@implementation ASMKNetworkKitPendingConnectionContainer
 
 + (instancetype)containerWithASRequest:(id <ASNetworkRequest>)request
                            MKOperation:(MKNetworkOperation*)operation
 {
-    ASAPNetworkKitPendingConnectionContainer *container = [self new];
+    ASMKNetworkKitPendingConnectionContainer *container = [self new];
     container.request = request;
     container.operation = operation;
     return container;

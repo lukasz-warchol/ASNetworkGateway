@@ -9,7 +9,7 @@
 #import "ASNetworkCallbacks.h"
 #import "MKNetworkKit.h"
 #import "NSURL+ASNetwork.h"
-#import "ASAPNetworkKitPendingConnectionContainer.h"
+#import "ASMKNetworkKitPendingConnectionContainer.h"
 #import "ASSimpleResponse.h"
 #import "ASDeclares.h"
 
@@ -40,7 +40,7 @@
 
 - (NSSet *)pendingRequests {
     NSMutableSet *pendingRequests = [NSMutableSet setWithCapacity:_pendingConnectionsContainers.count];
-    for (ASAPNetworkKitPendingConnectionContainer *container in _pendingConnectionsContainers) {
+    for (ASMKNetworkKitPendingConnectionContainer *container in _pendingConnectionsContainers) {
         [pendingRequests addObject:container.request];
     }
     return pendingRequests;
@@ -75,7 +75,7 @@
 }
 
 - (void)cancelPendingRequest:(id <ASNetworkRequest>)request {
-    ASAPNetworkKitPendingConnectionContainer *container = [self pendingConnectionContainerForRequest:request];
+    ASMKNetworkKitPendingConnectionContainer *container = [self pendingConnectionContainerForRequest:request];
     [_pendingConnectionsContainers removeObject:container];
     [container.operation cancel];
 }
@@ -83,7 +83,7 @@
 - (void)cancelAllPendingRequests {
     NSArray * connectionsContainersCopy = [_pendingConnectionsContainers copy];
     [_pendingConnectionsContainers removeAllObjects];
-    for (ASAPNetworkKitPendingConnectionContainer *container in connectionsContainersCopy) {
+    for (ASMKNetworkKitPendingConnectionContainer *container in connectionsContainersCopy) {
         [container.operation cancel];
     }
 }
@@ -91,19 +91,19 @@
 #pragma mark - Helper methods
 
 - (void)addOperationToPendingConnections:(MKNetworkOperation *)operation forRequest:(id <ASNetworkRequest>)request {
-    ASAPNetworkKitPendingConnectionContainer* container = [ASAPNetworkKitPendingConnectionContainer containerWithASRequest:request
+    ASMKNetworkKitPendingConnectionContainer* container = [ASMKNetworkKitPendingConnectionContainer containerWithASRequest:request
                                                          MKOperation:operation];
     [_pendingConnectionsContainers addObject:container];
 }
 
 - (void)removePendingConnectionContainerForRequest:(id <ASNetworkRequest>)request {
-    ASAPNetworkKitPendingConnectionContainer *container = [self pendingConnectionContainerForRequest:request];
+    ASMKNetworkKitPendingConnectionContainer *container = [self pendingConnectionContainerForRequest:request];
     [_pendingConnectionsContainers removeObject:container];
 }
 
-- (ASAPNetworkKitPendingConnectionContainer *)pendingConnectionContainerForRequest:(id <ASNetworkRequest>)request {
-    ASAPNetworkKitPendingConnectionContainer *matchingContainer = nil;
-    for (ASAPNetworkKitPendingConnectionContainer *container in _pendingConnectionsContainers) {
+- (ASMKNetworkKitPendingConnectionContainer *)pendingConnectionContainerForRequest:(id <ASNetworkRequest>)request {
+    ASMKNetworkKitPendingConnectionContainer *matchingContainer = nil;
+    for (ASMKNetworkKitPendingConnectionContainer *container in _pendingConnectionsContainers) {
         if (container.request == request) {
             matchingContainer = container;
             break;

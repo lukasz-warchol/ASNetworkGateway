@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1EDB811233846BE7C3219F2E /* ASMKNetworkKitGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8AE3E89F3F61AF788610 /* ASMKNetworkKitGateway.m */; };
 		1EDB84BA036058181ABE1116 /* NSURL+ASNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB89BF8981B7E162F0442F /* NSURL+ASNetwork.m */; };
-		1EDB88334F41A24E4AF28E01 /* ASAPNetworkKitPendingConnectionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8098594EEC4121AE970E /* ASAPNetworkKitPendingConnectionContainer.m */; };
+		1EDB88334F41A24E4AF28E01 /* ASMKNetworkKitPendingConnectionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8098594EEC4121AE970E /* ASMKNetworkKitPendingConnectionContainer.m */; };
 		1EDB8A72D355D00A79DC4C12 /* ASASIHTTPPendingContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDB8B32A718F9BD17A302F9 /* ASASIHTTPPendingContainer.m */; };
 		863760F8163DEDF000CD55FD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 863760F7163DEDF000CD55FD /* Podfile */; };
 		863760FA163DEE0300CD55FD /* ASNetworkGateway.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 863760F9163DEE0300CD55FD /* ASNetworkGateway.podspec */; };
@@ -33,9 +33,9 @@
 
 /* Begin PBXFileReference section */
 		1544ED44633049309B4A7465 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		1EDB8098594EEC4121AE970E /* ASAPNetworkKitPendingConnectionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAPNetworkKitPendingConnectionContainer.m; sourceTree = "<group>"; };
+		1EDB8098594EEC4121AE970E /* ASMKNetworkKitPendingConnectionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMKNetworkKitPendingConnectionContainer.m; sourceTree = "<group>"; };
 		1EDB8236584C17E78BF81AE6 /* ASASIHTTPPendingContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASASIHTTPPendingContainer.h; sourceTree = "<group>"; };
-		1EDB831F58793B5730CBE918 /* ASAPNetworkKitPendingConnectionContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAPNetworkKitPendingConnectionContainer.h; sourceTree = "<group>"; };
+		1EDB831F58793B5730CBE918 /* ASMKNetworkKitPendingConnectionContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMKNetworkKitPendingConnectionContainer.h; sourceTree = "<group>"; };
 		1EDB89BF8981B7E162F0442F /* NSURL+ASNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ASNetwork.m"; sourceTree = "<group>"; };
 		1EDB8A45615448C71517ABC2 /* ASMKNetworkKitGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASMKNetworkKitGateway.h; sourceTree = "<group>"; };
 		1EDB8AE3E89F3F61AF788610 /* ASMKNetworkKitGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASMKNetworkKitGateway.m; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 			children = (
 				1EDB8AE3E89F3F61AF788610 /* ASMKNetworkKitGateway.m */,
 				1EDB8A45615448C71517ABC2 /* ASMKNetworkKitGateway.h */,
-				1EDB8098594EEC4121AE970E /* ASAPNetworkKitPendingConnectionContainer.m */,
-				1EDB831F58793B5730CBE918 /* ASAPNetworkKitPendingConnectionContainer.h */,
+				1EDB8098594EEC4121AE970E /* ASMKNetworkKitPendingConnectionContainer.m */,
+				1EDB831F58793B5730CBE918 /* ASMKNetworkKitPendingConnectionContainer.h */,
 			);
 			path = MKNetworkKit;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				1EDB84BA036058181ABE1116 /* NSURL+ASNetwork.m in Sources */,
 				1EDB811233846BE7C3219F2E /* ASMKNetworkKitGateway.m in Sources */,
 				1EDB8A72D355D00A79DC4C12 /* ASASIHTTPPendingContainer.m in Sources */,
-				1EDB88334F41A24E4AF28E01 /* ASAPNetworkKitPendingConnectionContainer.m in Sources */,
+				1EDB88334F41A24E4AF28E01 /* ASMKNetworkKitPendingConnectionContainer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

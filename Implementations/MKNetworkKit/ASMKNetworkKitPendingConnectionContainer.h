@@ -10,7 +10,7 @@
 @class MKNetworkOperation;
 @protocol ASNetworkRequest;
 
-@interface ASAPNetworkKitPendingConnectionContainer : NSObject
+@interface ASMKNetworkKitPendingConnectionContainer : NSObject
 @property(nonatomic, strong) id <ASNetworkRequest> request;
 @property(nonatomic, strong) MKNetworkOperation *operation;
 
