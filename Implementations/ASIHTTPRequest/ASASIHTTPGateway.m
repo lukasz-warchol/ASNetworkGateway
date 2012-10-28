@@ -57,7 +57,7 @@
         [callbacks runOnStartWithRequest:request];
     }];
     
-    __block __WEAK typeof(self) bSelf = self;
+    __block __AS_WEAK typeof(self) bSelf = self;
     [httpRequest setCompletionBlock:^{
         NSLog(@"Response code %d for %@", httpRequest.responseStatusCode, httpRequest.url);
         [bSelf removeFromActiveRequestsRequest:request];

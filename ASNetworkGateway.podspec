@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name     = 'ASNetworkGateway'
-  s.version  = '0.0.2'
+  s.version  = '0.0.3'
   s.license  = 'MIT'
-  s.summary  = 'Wrapper classes for many popular network kits'
+  s.summary  = 'Wrapper classes for many popular network kits.'
   s.homepage = 'https://github.com/lukasz-warchol/ASNetworkGateway'
   s.author   = { 'Lukasz Warchol' => 'lwarchol87@gmail.com' }
   s.license  = { :type => 'MIT', :file => 'MIT.LICENSE' }

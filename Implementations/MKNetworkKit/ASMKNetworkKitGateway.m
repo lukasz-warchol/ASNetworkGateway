@@ -57,7 +57,7 @@
 
     [self addOperationToPendingConnections:operation forRequest:request];
 
-    __block __WEAK typeof(self) bSelf = self;
+    __block __AS_WEAK typeof(self) bSelf = self;
     [operation onCompletion:^(MKNetworkOperation *completedOperation) {
         ASSimpleResponse *response = [ASSimpleResponse responseWithStatusCode:completedOperation.HTTPStatusCode
                                                                    httpHeaders:completedOperation.readonlyRequest.allHTTPHeaderFields
